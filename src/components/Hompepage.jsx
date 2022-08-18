@@ -17,7 +17,7 @@ function Hompepage() {
   if(isFetching) return <Loader />;
 
   return (
-    <>
+    <div className='news-details-page'>
       <Title level={2} className='heading'>
         Global Crypto Stats
       </Title>
@@ -38,7 +38,7 @@ function Hompepage() {
         <Title level={3} className="show-more"><Link to="/news">Show More</Link></Title>
       </div>
       <News simplified/>
-    </>
+    </div>
   );
 }
 
